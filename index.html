@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Project</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+<body class="container bg-secondary">
+    <h1 class="text-center">Favorite Video Games</h1>
+    <br>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-game">Video Game</label>
+                        <input type="text" class="form-control" id="new-game" placeholder="e.g. Pong">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="game-dev">Developer</label>
+                        <input type="text" class="form-control" id="game-dev" placeholder="e.g. Nintendo">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                    <label for="release-date">Release Date</label>
+                    <input type="date" class="form-control" id="release-date">
+                    </div>
+                </div>
+                <button id="add" class="btn btn-dark form-control">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <table id="list" class="table table-dark table-striped">
+        <tr>
+            <th>Video Game Title</th>
+            <th>Developer</th>
+            <th>Date Released</th>
+        </tr>
+    </table>
+
+
+    <script src="index.js"></script>   
+</body>
+</html>
